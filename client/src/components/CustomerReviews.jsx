@@ -16,10 +16,11 @@ export default function CustomerReviews() {
   });
   const [submitting, setSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const API_URL = import.meta.env.VITE_API_URL || '';
 
   const fetchReviews = async () => {
     try {
-      const res = await fetch('/api/reviews');
+      const res = await fetch(`${API_URL}/api/reviews`);
       const data = await res.json();
       setReviews(data);
     } catch {
@@ -38,7 +39,7 @@ export default function CustomerReviews() {
     if (!formData.author || !formData.comment) return;
     setSubmitting(true);
     try {
-      const res = await fetch('/api/reviews', {
+      const res = await fetch(`${API_URL}/api/reviews`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

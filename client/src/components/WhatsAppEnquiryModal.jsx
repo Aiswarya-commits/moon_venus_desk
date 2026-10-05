@@ -16,6 +16,7 @@ export default function WhatsAppEnquiryModal({ isOpen, onClose, defaultSize, def
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  const API_URL = import.meta.env.VITE_API_URL || '';
 
   if (!isOpen) return null;
 
@@ -30,7 +31,7 @@ export default function WhatsAppEnquiryModal({ isOpen, onClose, defaultSize, def
     setError('');
 
     try {
-      const res = await fetch('/api/enquiries', {
+      const res = await fetch(`${API_URL}/api/enquiries`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

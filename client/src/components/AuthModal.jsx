@@ -24,6 +24,8 @@ export default function AuthModal({
   const [signupLoading, setSignupLoading] = useState(false);
   const [signupError, setSignupError] = useState('');
 
+  const API_URL = import.meta.env.VITE_API_URL || '';
+
   if (!isOpen) return null;
 
   const handleSignIn = async (e) => {
@@ -32,7 +34,7 @@ export default function AuthModal({
     setLoginLoading(true);
 
     try {
-      const res = await fetch('/api/auth/signin', {
+      const res = await fetch(`${API_URL}/api/auth/signin`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifier: loginIdent, password: loginPass })
@@ -61,7 +63,7 @@ export default function AuthModal({
     setSignupLoading(true);
 
     try {
-      const res = await fetch('/api/auth/signup', {
+      const res = await fetch(`${API_URL}/api/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

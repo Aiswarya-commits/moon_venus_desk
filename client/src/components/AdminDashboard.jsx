@@ -32,6 +32,7 @@ export default function AdminDashboard({ isOpen, onClose }) {
   const [newStatus, setNewStatus] = useState('');
   const [statusNote, setStatusNote] = useState('');
   const [invoiceModalOrder, setInvoiceModalOrder] = useState(null);
+  const API_URL = import.meta.env.VITE_API_URL || '';
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -47,14 +48,14 @@ export default function AdminDashboard({ isOpen, onClose }) {
     setLoading(true);
     try {
       // 1. Fetch Stats
-      const statsRes = await fetch('/api/admin/stats');
+      const statsRes = await fetch(`${API_URL}/api/admin/stats`);
       if (statsRes.ok) {
         const statsData = await statsRes.json();
         setStats(statsData);
       }
 
       // 2. Fetch Orders
-      let url = '/api/orders?';
+      let url = `${API_URL}/api/orders?`;
       if (statusFilter !== 'All') url += `status=${encodeURIComponent(statusFilter)}&`;
       if (search) url += `search=${encodeURIComponent(search)}&`;
 
@@ -69,13 +70,13 @@ export default function AdminDashboard({ isOpen, onClose }) {
       }
 
       // 3. Fetch Enquiries
-      const enqRes = await fetch('/api/enquiries');
+      const enqRes = await fetch(`${API_URL}/api/enquiries`);
       if (enqRes.ok) {
         setEnquiries(await enqRes.json());
       }
 
       // 4. Fetch Settings
-      const setRes = await fetch('/api/settings');
+      const setRes = await fetch(`${API_URL}/api/settings`);
       if (setRes.ok) {
         setSettings(await setRes.json());
       }
@@ -96,7 +97,7 @@ export default function AdminDashboard({ isOpen, onClose }) {
     if (!newStatus) return;
     setUpdatingId(orderId);
     try {
-      const res = await fetch(`/api/orders/${orderId}/status`, {
+      const res = await fetch(`${API_URL}/api/orders/${orderId}/status`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus, note: statusNote })
@@ -115,7 +116,7 @@ export default function AdminDashboard({ isOpen, onClose }) {
 
   const handleUpdateEnquiryStatus = async (enqId, status) => {
     try {
-      await fetch(`/api/enquiries/${enqId}/status`, {
+      await fetch(`${API_URL}/api/enquiries/${enqId}/status`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status })
@@ -131,7 +132,7 @@ export default function AdminDashboard({ isOpen, onClose }) {
     setSavingSettings(true);
     setSettingsSaved(false);
     try {
-      const res = await fetch('/api/settings', {
+      const res = await fetch(`${API_URL}/api/settings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(settings)

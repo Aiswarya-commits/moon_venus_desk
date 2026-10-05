@@ -41,6 +41,7 @@ export default function HeroSection({ product, onAddToCart, onBuyNow }) {
   const totalPrice = singleUnitPrice * quantity;
   const totalMrp = ((selectedSize?.mrp || 24999) + (selectedFinish?.priceDelta || 0) + addonsTotal) * quantity;
   const discountAmount = totalMrp - totalPrice;
+  const API_URL = import.meta.env.VITE_API_URL || '';
 
   // Check pincode
   const handleCheckPincode = async (e) => {
@@ -51,7 +52,7 @@ export default function HeroSection({ product, onAddToCart, onBuyNow }) {
     }
     setIsCheckingPin(true);
     try {
-      const res = await fetch('/api/check-pincode', {
+      const res = await fetch(`${API_URL}/api/check-pincode`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ pincode })

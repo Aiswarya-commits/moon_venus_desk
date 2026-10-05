@@ -26,6 +26,7 @@ export default function CheckoutModal({
     state: 'Karnataka',
     pincode: '560038'
   });
+  const API_URL = import.meta.env.VITE_API_URL || '';
 
   useEffect(() => {
     if (currentUser) {
@@ -88,7 +89,7 @@ export default function CheckoutModal({
         }
       };
 
-      const res = await fetch('/api/orders', {
+      const res = await fetch(`${API_URL}/api/orders`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

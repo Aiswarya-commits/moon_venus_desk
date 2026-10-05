@@ -6,13 +6,14 @@ export default function OrderTrackingModal({ isOpen, onClose, initialOrderId }) 
   const [order, setOrder] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const API_URL = import.meta.env.VITE_API_URL || '';
 
   const fetchOrder = async (id) => {
     if (!id) return;
     setLoading(true);
     setError('');
     try {
-      const res = await fetch(`/api/orders/${encodeURIComponent(id.trim())}`);
+      const res = await fetch(`${API_URL}/api/orders/${encodeURIComponent(id.trim())}`);
       const data = await res.json();
       if (res.ok) {
         setOrder(data);
