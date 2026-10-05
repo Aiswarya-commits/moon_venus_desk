@@ -43,8 +43,10 @@ export default function App() {
   const [toastMessage, setToastMessage] = useState('');
 
   // Fetch product from backend API
+// Fetch product from backend API
   useEffect(() => {
-    fetch('/api/product')
+    const API_URL = import.meta.env.VITE_API_URL || '';
+    fetch(`${API_URL}/api/product`)
       .then(res => res.json())
       .then(data => {
         setProduct(data);
@@ -55,7 +57,6 @@ export default function App() {
         setLoading(false);
       });
   }, []);
-
   // Listen to custom event to open tracking directly from order success screen
   useEffect(() => {
     const handleOpenTrack = (e) => {

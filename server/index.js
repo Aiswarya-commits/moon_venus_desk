@@ -573,6 +573,10 @@ app.get('*', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Moon Venus Backend Server running on http://localhost:${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Moon Venus Backend Server running on http://localhost:${PORT}`);
+  });
+}
+
+export default app;
