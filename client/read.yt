@@ -1,0 +1,12 @@
+                <FilterAutocomplete
+                  label="P&L Category / Apply To"
+                  options={pnlCategoryOptions}
+                  value={(formData.pnlCategory as string[])?.[0] || ""}
+                  onChange={(newValue: string) =>
+                    handleMultiSelectChange("pnlCategory")("pnlCategory", newValue ? [newValue] : [])
+                  }
+                  openOnFocus
+                  required
+                  error={touched.pnlCategory && !!errors.pnlCategory}
+                  helperText={touched.pnlCategory ? errors.pnlCategory : ""}
+                />

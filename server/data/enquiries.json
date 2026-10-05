@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ENQ-63606",
+    "createdAt": "2026-09-30T11:56:00.417Z",
+    "name": "Aiswarya Customer",
+    "phone": "+91 98765 43210",
+    "email": "aiswarya@example.com",
+    "city": "Bengaluru",
+    "pincode": "560038",
+    "deskSize": "140 � 70 cm",
+    "finish": "Pristine Matte White",
+    "message": "Hello! I want to confirm delivery date and custom cable tray.",
+    "status": "New"
+  },
+  {
+    "id": "ENQ-10492",
+    "createdAt": "2026-09-24T14:20:00.000Z",
+    "name": "Karthik Subramanian",
+    "phone": "+91 98450 12345",
+    "email": "karthik.subbu@techcorp.in",
+    "city": "Bengaluru",
+    "pincode": "560103",
+    "deskSize": "160 × 80 cm",
+    "finish": "Pristine Matte White",
+    "message": "Need 6 desks for our new startup office in Bellandur. Can we get bulk pricing and on-site assembly this weekend?",
+    "status": "Responded"
+  },
+  {
+    "id": "ENQ-10493",
+    "createdAt": "2026-09-24T16:45:00.000Z",
+    "name": "Sneha Roy",
+    "phone": "+91 97112 34567",
+    "email": "sneha.roy@gmail.com",
+    "city": "Mumbai",
+    "pincode": "400050",
+    "deskSize": "140 × 70 cm",
+    "finish": "Nordic Cloud Ash",
+    "message": "Can I install a dual 34-inch monitor heavy duty clamp on the back edge without voiding warranty?",
+    "status": "New"
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "id": "moon-venus-desk-01",
+  "name": "Moon Venus Horizon Desk",
+  "tagline": "Architectural Minimalist Desk Engineered in Pure Matte White",
+  "brand": "Moon Venus",
+  "rating": 4.9,
+  "reviewCount": 384,
+  "inStock": true,
+  "badge": "Moon Venus Bestseller",
+  "sizes": [
+    {
+      "id": "size-120",
+      "label": "120 × 60 cm",
+      "sublabel": "Studio / Compact WFH",
+      "price": 14999,
+      "mrp": 21999,
+      "stock": 18
+    },
+    {
+      "id": "size-140",
+      "label": "140 × 70 cm",
+      "sublabel": "Executive Signature (Most Popular)",
+      "price": 17999,
+      "mrp": 24999,
+      "isPopular": true,
+      "stock": 25
+    },
+    {
+      "id": "size-160",
+      "label": "160 × 80 cm",
+      "sublabel": "Master Dual-Display Studio",
+      "price": 21999,
+      "mrp": 29999,
+      "stock": 12
+    }
+  ],
+  "finishes": [
+    {
+      "id": "pristine-matte",
+      "name": "Pristine Matte White",
+      "description": "Zero-glare, anti-fingerprint, velvety warm satin touch",
+      "hex": "#FAFAFA",
+      "border": "#E5E5E5",
+      "priceDelta": 0
+    },
+    {
+      "id": "cloud-ash",
+      "name": "Nordic Cloud Ash",
+      "description": "Textured white grain with warm organic tactile finish",
+      "hex": "#F0EFEB",
+      "border": "#DDD8D0",
+      "priceDelta": 1000
+    },
+    {
+      "id": "bianco-carrara",
+      "name": "Bianco Marble Touch",
+      "description": "Subtle Italian white marble vein texture, scratch-proof",
+      "hex": "#EAECEF",
+      "border": "#CBD5E1",
+      "priceDelta": 1500
+    }
+  ],
+  "addons": [
+    {
+      "id": "cable-spine",
+      "name": "Magnetic Cable Management Spine",
+      "description": "Heavy-duty steel channel to conceal all monitors and power cords",
+      "price": 1499,
+      "selected": false
+    },
+    {
+      "id": "power-dock",
+      "name": "Concealed 4-Outlet Fast Surge Dock",
+      "description": "Under-desk mounted 65W USB-C PD + AC high-speed charging dock",
+      "price": 1999,
+      "selected": false
+    },
+    {
+      "id": "desk-mat",
+      "name": "Arctic Snow Waterproof Vegan Leather Desk Mat (90x40cm)",
+      "description": "Buttery-smooth precision mouse tracking & scratch protection",
+      "price": 999,
+      "selected": false
+    },
+    {
+      "id": "clamp-bar",
+      "name": "Reinforced Dual-Monitor Steel Mount Plate",
+      "description": "Distributes heavy clamp loads evenly across the steel subframe",
+      "price": 1199,
+      "selected": false
+    }
+  ],
+  "images": [
+    {
+      "url": "/images/hero_lifestyle.jpg",
+      "title": "Minimalist Room Studio Setup",
+      "caption": "Moon Venus Desk in a sunlit architectural Scandinavian workspace"
+    },
+    {
+      "url": "/images/studio_front.jpg",
+      "title": "Studio Cyclorama Full View",
+      "caption": "Precision engineered dual upright pillars with seamless white powder coating"
+    },
+    {
+      "url": "/images/underframe_weld.png",
+      "title": "Precision TIG Welded Underframe",
+      "caption": "Triangulated cantilever support brackets with aerospace steel joints"
+    },
+    {
+      "url": "/images/side_elevation.png",
+      "title": "Dual-Pillar Architectural Silhouette",
+      "caption": "Heavy-gauge vertical columns ensuring absolute zero lateral wobble"
+    },
+    {
+      "url": "/images/leveling_foot.png",
+      "title": "Heavy-Duty Base with Micro-Leveling Glides",
+      "caption": "Solid rectangular ground foot with floor-protective elastomer pads"
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "weld",
+      "title": "Triangulated Diagonal Strut & TIG Weld",
+      "desc": "Heavy-duty cantilever steel bracket bolted and precision-welded directly to the tabletop underframe to eliminate sag and side-to-side wobble under 130kg+ loads.",
+      "image": "/images/underframe_weld.png",
+      "tag": "Structural Rigidity"
+    },
+    {
+      "id": "columns",
+      "title": "Dual-Pillar High-Tensile Column",
+      "desc": "Dual upright architectural rectangular columns fabricated from 2.0mm thick cold-rolled aerospace steel, finished with electro-statically applied satin white powder coating.",
+      "image": "/images/side_elevation.png",
+      "tag": "Zero Wobble"
+    },
+    {
+      "id": "feet",
+      "title": "Precision Ground Stabilizer & Glides",
+      "desc": "Extended heavy-gauge rectangular base beam fitted with micro-adjustable anti-vibration leveling feet that adapt seamlessly to uneven tile or hardwood floors.",
+      "image": "/images/leveling_foot.png",
+      "tag": "Floor Protection"
+    }
+  ],
+  "specs": {
+    "Frame Material": "Heavy-Gauge Cold Rolled Carbon Steel (2.0mm thickness)",
+    "Tabletop Material": "High-Density FSC-Certified Engineered Core with Anti-Scratch Melamine",
+    "Surface Finish": "Electrostatically Baked 80µm Matte White Powder Coat",
+    "Weight Capacity": "130 kg (Static tested to 250 kg)",
+    "Desk Height": "74.5 cm (Standard Ergonomic Golden Ratio)",
+    "Frame Thickness": "50mm × 25mm Box Steel Reinforcements",
+    "Foot Glides": "M8 Micro-Adjustable Rubberized Non-Skid Levelers",
+    "Assembly Time": "12–15 Minutes (All tools & magnetic hardware included)",
+    "Certification": "BIFMA X5.5 Commercial Grade & RoHS Compliant",
+    "Warranty": "10-Year Limited Frame Warranty | 3-Year Tabletop Warranty"
+  },
+  "features": [
+    {
+      "title": "Zero-Wobble Dual-Pillar Steel Frame",
+      "description": "Constructed from industrial-strength structural steel with dual vertical uprights and triangular truss brackets for rock-solid stability during typing and intensive work."
+    },
+    {
+      "title": "Pure Architectural Matte White",
+      "description": "Finished with an anti-reflective, fingerprint-repellent matte powder coat that preserves the clean, pristine Scandinavian aesthetic over years of daily use."
+    },
+    {
+      "title": "130 kg True Load Bearing",
+      "description": "Safely supports multiple ultra-wide monitors, studio audio monitors, heavy desktop towers, and desk-clamp accessories with zero deflection."
+    },
+    {
+      "title": "Micro-Adjustable Leveling System",
+      "description": "Threaded precision glides underneath each base foot compensate for uneven floors while safeguarding hardwood, marble, or tile from scratches."
+    },
+    {
+      "title": "12-Minute Effortless Assembly",
+      "description": "Features pre-aligned threaded inserts, magnetized hex key, and custom precision bolts for a seamless one-person setup experience."
+    },
+    {
+      "title": "100-Night In-Home Trial",
+      "description": "Experience the Moon Venus Desk in your own workspace. If you don't fall in love, we will pick it up and refund 100% of your money."
+    }
+  ]
+}

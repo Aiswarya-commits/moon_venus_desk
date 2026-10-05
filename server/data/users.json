@@ -1,0 +1,31 @@
+[
+  {
+    "id": "usr-admin",
+    "name": "Moon Venus Admin",
+    "email": "admin@moonvenus.in",
+    "phone": "+91 80 4918 0000",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "id": "usr-1",
+    "name": "Aiswarya K. J.",
+    "email": "aiswarya@example.com",
+    "phone": "+91 91234 56789",
+    "password": "user123",
+    "role": "customer",
+    "address": "Indiranagar 12th Main",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560038"
+  },
+  {
+    "id": "usr-1790248078805",
+    "name": "Aiswarya",
+    "email": "aiswaryajayesh35@gmail.com",
+    "phone": "9961500503",
+    "password": "123456789",
+    "role": "customer",
+    "createdAt": "2026-09-24T11:07:58.805Z"
+  }
+]
